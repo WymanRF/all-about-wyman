@@ -3,27 +3,44 @@
     <head>
         <meta charset="UTF-8">
         <title>All About Me!</title>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link rel="stylesheet" href="shared.css"> 
+        <link rel="stylesheet" href="index.css"> 
     </head>
     <body>
         <nav>
-            <a href = "contact.html"> Contact me please!</a>
+                <ul>
+                        <li>  <a class="active" href = "index.html"> Home</a></li>
+                        <li>  <a href = "contact.html"> Contact me!</a></li>
+                </ul>
         </nav>
-        <h1>Hello World!</h1>  
-        <h2>My name is Wy</h2>  
-        <img src = "unnamed.jpg" 
-             alt = "wy3" width="250" height="250"
-        />
-        <p>
-            <a href = 'https://www.google.com' target = "_blank">
-                I learn web development at Wyncode Academy
-            </a>
-        </p>
-        <div> I like to code using...
-            <ul>
-                <li>Ruby</li>
-                <li>SQL </li>
-                <li>C# </li>
-            </ul>
-        </div>      
+        <main>
+            <h1>Hello World!</h1>  
+            <h2>My name is Wy</h2>  
+            <img id="profile-pic"
+                src = "unnamed.jpg" 
+                alt = "wy3" width="250" height="250"/>
+            <p>
+                <a href = 'https://wyncode.co' target = "_blank">
+                    I learn web development at Wyncode Academy
+                </a>
+            </p>
+            <div> I like to code using...
+                <ul id="wrapper">
+                    <li class="language">
+                        <h3>Ruby</h3>
+                        <img src="ruby.jpg" alt="js"/>
+                    </li>
+                    <li class="language">
+                        <h3>SQL</h3> 
+                        <img src="sql.jpg" alt="sql"/>
+                    </li>
+                    <li class="language">
+                        <h3>C#</h3> 
+                        <img src="cSharp.jpg" alt="csharp"/>
+                    </li>
+                </ul>
+            </div>    
+        </main>  
     </body>
 </html>
